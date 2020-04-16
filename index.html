@@ -3,20 +3,155 @@
 
 <head>
   <meta charset="utf-8">
-  <title>My Plants</title>
+  <title>The Happy Chicken Project</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="Get started with HTML, CSS and JavaScript">
-  <meta name="author" content="Lærke Høj Lange, Asger Nielsen og Fie Johannsen">
-  <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" />
+  <meta name="description" content="The Happy Chicken Project">
+  <meta name="author" content="Fie Johannsen">
   <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="https://use.typekit.net/pog6zkp.css">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+
 </head>
 
 
 <body>
+
+  <header>
+    <div class="navIconContainer" onclick="navIcon(this)">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+    </div>
+    <div id="navContainer">
+      <div id="navBullets">
+        <img class="navLogo" src="img/logoorange.png" alt="">
+
+        <a href="#">OM OS</a>
+        <a href="#">SAMARBEJDSPARTNERE</a>
+        <a href="#">KONTAKT</a>
+      </div>
+    </div>
+
+  </header>
+  <div class="frontPage">
+    <div class="frontPageLogoWrapper">
+      <img class="frontPageLogo" src="img/logowhite.png" alt="">
+    </div>
+  </div>
+
+  <div id="about">
+    <h1>OM OS</h1>
+
+    <div class="about-slider">
+
+
+      <div class="slideshow-container">
+
+        <div class="aboutSlides">
+          <h2>HEJHEJ</h2>
+          <p>Chickens taste good. Happy chickens taste even better. They live a healthy life with nutritious feed, plenty of room and lots of exercise.
+
+            We are breeding better chickens for a better life. We believe that working for better animal welfare is the right thing to do. We want to help you to a healthier, tastier and more responsible choice – when you go for a take-away or when
+            you eat out. To keep our chickens happy and healthy, we give them nutritious feed, plenty of room and activities to keep them occupied. We even build playhouses with ramps, ladders, roosts, swings etc.
+
+            We give them the freedom and conditions to express their natural behavior. We want them to be happy chickens.</p>
+          <img src="img/logoorange.png">
+        </div>
+
+        <div class="aboutSlides">
+          <img src="img/bisou/bisou-blue-jade.png">
+        </div>
+
+        <div class="aboutSlides">
+          <img src="img/bisou/bisou-ivory.png" style="width:80%">
+        </div>
+
+
+        <a class="prev" onclick="plusAboutSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusAboutSlides(1)">&#10095;</a>
+
+      </div>
+
+      <div class="dot-container">
+        <span class="aboutDot" onclick="currentAboutSlide(1)"></span>
+        <span class="aboutDot" onclick="currentAboutSlide(2)"></span>
+        <span class="aboutDot" onclick="currentAboutSlide(3)"></span>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="chickenWrapper">
+  </div>
+
+
+  <div id="partners">
+    <div class="partner-slider">
+
+
+      <div class="slideshow-container">
+
+        <div class="partnerSlides">
+          <div>
+            <h2>HEJHEJ</h2>
+            <p>Chickens taste good. Happy chickens taste even better. They live a healthy life with nutritious feed, plenty of room and lots of exercise.
+
+              We are breeding better chickens for a better life. We believe that working for better animal welfare is the right thing to do. We want to help you to a healthier, tastier and more responsible choice – when you go for a take-away or when
+              you eat out. To keep our chickens happy and healthy, we give them nutritious feed, plenty of room and activities to keep them occupied. We even build playhouses with ramps, ladders, roosts, swings etc.
+
+              We give them the freedom and conditions to express their natural behavior. We want them to be happy chickens.</p>
+          </div>
+          <img src="img/logoorange.png">
+        </div>
+
+        <div class="partnerSlides">
+          <img src="img/bisou/bisou-blue-jade.png" style="width:80%">
+        </div>
+
+        <div class="partnerSlides">
+          <img src="img/bisou/bisou-ivory.png" style="width:80%">
+        </div>
+
+
+        <a class="prev" onclick="plusPartnerSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusPartnerSlides(1)">&#10095;</a>
+
+      </div>
+
+      <div class="dot-container">
+        <span class="partnerDot" onclick="currentPartnerSlide(1)"></span>
+        <span class="partnerDot" onclick="currentPartnerSlide(2)"></span>
+        <span class="partnerDot" onclick="currentPartnerSlide(3)"></span>
+
+      </div>
+    </div>
+
+  </div>
+
+  </div>
+
+  <footer>
+    <div class="footerContent">
+      <h2>KONTAKT</h2>
+      <div></div>
+    </div>
+    <div class="footerContent">
+      <h2>PRESSEKONTAKT</h2>
+      <p>Anne Gitte Elbronn</p>
+      <p>anne.gitte.elbronn@scandistandard.com</p>
+      <p>+45 41 37 72 95</p>
+    </div>
+    <div class="footerContent">
+      <h2>ADRESSE</h2>
+      <p>Scandi Standard AB</p>
+      <p>Franzéngatan 5</p>
+      <p>112 51 Stockholm, Sweden</p>
+    </div>
+
+
+  </footer>
+
+
   <!-- main js file -->
   <script src="js/main.js"></script>
 
