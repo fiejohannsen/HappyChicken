@@ -2,11 +2,12 @@
 html {
   height: 100%;
   width: 100%;
-
 }
+
 body {
   margin: 0;
 }
+
 @font-face {
   font-family: CluckCluck;
   src: url("/fonts/CluckCluck.otf");
@@ -21,10 +22,12 @@ body {
   --h-font: CluckCluck;
   --p-font: 'Raleway', sans-serif;
 }
+
 h1, h2 {
-  margin: 0;
+  margin: 0 0 5% 0;
   font-family: var(--h-font);
 }
+
 p {
   margin: 0;
   font-family: var(--p-font);
@@ -42,7 +45,9 @@ header {
   width: 100%;
   height: 100vh;
   z-index: 0;
-
+}
+#desktopHero {
+  display: none;
 }
 
 .navIconContainer {
@@ -51,7 +56,6 @@ header {
   position: fixed;
   right: 6px;
   z-index: 2;
-
 }
 
 .bar1, .bar2, .bar3 {
@@ -84,7 +88,6 @@ header {
   height: 100vh;
   margin: auto;
   z-index: 1;
-
 }
 
 #navBullets {
@@ -94,7 +97,6 @@ header {
   padding-top: 5%;
   height: 100vh;
   z-index: 1;
-
 }
 
 #navBullets>a {
@@ -121,29 +123,36 @@ header {
 
 .frontPageLogo {
   margin-top: 50%;
-width: auto;
-height: 20%;
+  width: auto;
+  height: 20%;
 }
 
+#badge {
+  background-color: var(--light-beige);
+  color: var(--dark-orange);
+  text-align: center;
+      padding: 8% 0;
+}
+
+#badge > img {
+  width: 30%;
+}
 
 #about, #partners {
   background-color: var(--light-beige);
   text-align: center;
-  padding-top:10%;
+  padding-top: 10%;
   color: var(--dark-orange);
 }
 
-
-
 .about-slider, .partner-slider {
-  min-height: 700px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-bottom: 5%;
+
 }
-
-
 
 .aboutSlides, .partnerSlides {
   display: none;
@@ -152,17 +161,14 @@ height: 20%;
   width: 80%;
 }
 
-.aboutSlides>img {
+.aboutSlides>img, .partnerSlides>img {
   width: 100%;
   -webkit-animation: slide-in-left 1s ease-out both;
   animation: slide-in-left 1s ease-out both;
+      margin: 8% 0;
 }
 
-.partnerSlides>img {
-  width: 100%;
-  -webkit-animation: slide-in-left 1s ease-out both;
-  animation: slide-in-left 1s ease-out both;
-}
+
 
 .aboutSlides>p, .partnerSlides>p {
   text-align: left;
@@ -203,15 +209,14 @@ height: 20%;
   border-radius: 3px 0 0 3px;
 }
 
-
 .aboutDot, .partnerDot {
   cursor: pointer;
   height: 10px;
   width: 10px;
   margin: 0 1px;
   border: 3px solid;
-border-color: var(--dark-orange);
- border-radius: 50%;
+  border-color: var(--dark-orange);
+  border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
 }
@@ -220,16 +225,27 @@ border-color: var(--dark-orange);
   background-color: var(--dark-orange);
 }
 
+.partnerLogo {
+  width: 35%;
+}
 .chickenWrapper {
-  background-image: url(../img/chicks.png);
-  background-size: cover;
-  background-color: var(--orange);
   height: 30vh;
   width: 100%;
+  background-size: cover;
+
 }
-.chickenWrapper>img{
-  width: 50%;
+.chickenWrapper1 {
+  background-image: url(../img/chick1.png);
+  background-color: var(--dark-orange);
+
 }
+.chickenWrapper2 {
+  background-image: url(../img/chick2.png);
+  background-color: var(--orange);
+
+}
+
+
 footer {
   display: flex;
   flex-direction: column;
@@ -239,9 +255,80 @@ footer {
   text-align: center;
   background-color: var(--dark-orange);
   color: var(--light-beige);
-
 }
 
 .footerContent {
   margin: 5%;
+}
+
+@media screen and (min-width: 600px) {
+  .chickenWrapper {
+    height: 40vh;
+
+  }
+
+}
+
+@media screen and (min-width: 992px) {
+  #navContainer {
+    background-color: transparent;
+
+  }
+
+  .navIconContainer {
+  top: 2%;
+    right: 2%;
+  }
+
+  #navBullets {
+margin-right: 2%;
+  }
+
+  #navBullets>a {
+
+    text-align: right;
+    margin: 10px;
+
+  }
+
+  .navLogo {
+    display: none;
+  }
+
+
+.frontPage {
+  background-image: none;
+}
+.frontPageLogoWrapper {
+  width: 10%;
+  height: 10%;
+  position: fixed;
+  z-index: 3;
+  top: 2%;
+left: 2%;
+
+}
+.frontPageLogo {
+    margin-top: 5%;
+    width: auto;
+    height: 80%;
+
+}
+  #desktopHero {
+    display: block;
+    position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  }
+
+  .partnerSlides {
+    flex-direction: row;
+align-items: center;
+  }
+  footer {
+    flex-direction: row;
+    align-items: flex-start;
+  }
 }
