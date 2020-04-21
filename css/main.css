@@ -9,9 +9,20 @@ body {
 }
 
 @font-face {
+    font-family: 'CluckCluck';
+    src: url("fonts/cluckcluck.woff2") format("woff2"),
+         url("fonts/cluckcluck.woff") format('woff'),
+         url("fonts/cluckcluck.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+
+}
+/*@font-face {
   font-family: CluckCluck;
   src: url("/fonts/CluckCluck.otf");
-}
+}*/
+
+
 
 :root {
   --white: #ffffff;
@@ -19,7 +30,7 @@ body {
   --orange: #D88731;
   --beige: #F9D2AD;
   --light-beige: #F2E5D4;
-  --h-font: CluckCluck;
+  --h-font: 'CluckCluck';
   --p-font: 'Raleway', sans-serif;
 }
 
@@ -132,10 +143,17 @@ header {
   color: var(--dark-orange);
   text-align: center;
       padding: 8% 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
 }
 
-#badge > img {
+.badgeWrapper > img {
   width: 30%;
+      margin: 5% 1%;
+}
+#badge > p {
+  width: 80%;
 }
 
 #about, #partners {
@@ -158,11 +176,12 @@ header {
   display: none;
   justify-content: center;
   flex-direction: column;
+  align-items: center;
   width: 80%;
 }
 
 .aboutSlides>img, .partnerSlides>img {
-  width: 100%;
+  width: 80%;
   -webkit-animation: slide-in-left 1s ease-out both;
   animation: slide-in-left 1s ease-out both;
       margin: 8% 0;
@@ -227,6 +246,8 @@ header {
 
 .partnerLogo {
   width: 35%;
+  margin-bottom: 5%;
+
 }
 .chickenWrapper {
   height: 30vh;
@@ -264,12 +285,32 @@ footer {
 @media screen and (min-width: 600px) {
   .chickenWrapper {
     height: 40vh;
+    background-size: contain;
+        background-repeat: no-repeat;
+  }
+  .chickenWrapper1 {
+    background-position: right;
 
   }
+  .chickenWrapper2 {
+    background-position: left;
 
+  }
+  #badge > p {
+    width: 55%;
+  }
+  .badgeWrapper>img {
+    width: 20%;
+  }
 }
 
 @media screen and (min-width: 992px) {
+h1 {
+  margin: 0%;
+}
+h2 {
+  margin-top: 5%;
+}
   #navContainer {
     background-color: transparent;
 
@@ -323,6 +364,40 @@ left: 2%;
   min-height: 100%;
   }
 
+
+  #badge {
+
+  }
+
+  #badge > img {
+    width: 15%;
+
+  }
+
+.chickenWrapper {
+  height: 60vh;
+}
+.aboutSlides>img {
+  width: 60%;
+
+}
+#about, #partners {
+  padding-top: 5%;
+}
+.partnerSlides>img {
+  width: 50%;
+}
+
+.partnerContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.partnerContent > p {
+  width: 70%;
+  text-align: left;
+}
   .partnerSlides {
     flex-direction: row;
 align-items: center;
