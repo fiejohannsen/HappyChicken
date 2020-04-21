@@ -30,7 +30,7 @@ body {
   --orange: #D88731;
   --beige: #F9D2AD;
   --light-beige: #F2E5D4;
-  --h-font: 'CluckCluck';
+  --h-font: 'CluckCluck', sans-serif;
   --p-font: 'Raleway', sans-serif;
 }
 
