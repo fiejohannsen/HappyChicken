@@ -366,8 +366,8 @@ left: 2%;
 
   }
 
-  #badge > img {
-    width: 15%;
+  .badgeWrapper > img {
+    width: 12%;
 
   }
 
