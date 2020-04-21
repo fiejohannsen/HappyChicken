@@ -10,9 +10,13 @@ body {
 
 @font-face {
     font-family: 'CluckCluck';
+    src: url("/fonts/cluckcluck.eot");
     src: url("/fonts/cluckcluck.woff2") format("woff2"),
-         url("/fonts/cluckcluck.woff") format('woff'),
-         url("/fonts/cluckcluck.otf") format("opentype");
+         url("/fonts/cluckcluck.woff") format("woff"),
+         url("/fonts/cluckcluck.otf") format("opentype"),
+         url("/fonts/cluckcluck.ttf") format("truetype"),
+         url("/fonts/cluckcluck.svg#webfont") format("svg");
+
     font-weight: normal;
     font-style: normal;
 
@@ -21,6 +25,7 @@ body {
   font-family: CluckCluck;
   src: url("/fonts/CluckCluck.otf");
 }*/
+
 
 
 
