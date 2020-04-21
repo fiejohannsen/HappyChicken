@@ -10,9 +10,9 @@ body {
 
 @font-face {
     font-family: 'CluckCluck';
-    src: url("fonts/cluckcluck.woff2") format("woff2"),
-         url("fonts/cluckcluck.woff") format('woff'),
-         url("fonts/cluckcluck.otf") format("opentype");
+    src: url("/fonts/cluckcluck.woff2") format("woff2"),
+         url("/fonts/cluckcluck.woff") format('woff'),
+         url("/fonts/cluckcluck.otf") format("opentype");
     font-weight: normal;
     font-style: normal;
 
