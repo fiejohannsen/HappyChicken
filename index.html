@@ -17,28 +17,28 @@
 <body>
 
   <header>
-    <div class="navIconContainer" onclick="navIcon(this)">
-      <div class="bar1"></div>
-      <div class="bar2"></div>
-      <div class="bar3"></div>
+    <div class="burgermenu" onclick="navIcon(this)">
+      <div class="burgermenu__bar1"></div>
+      <div class="burgermenu__bar2"></div>
+      <div class="burgermenu__bar3"></div>
     </div>
     <div id="navContainer">
-      <div id="navBullets">
-        <img class="navLogo" src="img/logoorange.png" alt="">
+      <div id="nav">
+        <img class="nav__logo" src="img/logoorange.png" alt="">
 
-        <a href="#">OM OS</a>
-        <a href="#">SAMARBEJDSPARTNERE</a>
-        <a href="#">KONTAKT</a>
+        <a class="nav__link" href="#">OM OS</a>
+        <a class="nav__link" href="#">SAMARBEJDSPARTNERE</a>
+        <a class="nav__link" href="#">KONTAKT</a>
       </div>
     </div>
 
   </header>
-  <div class="frontPage">
-    <div class="frontPageLogoWrapper">
-      <img class="frontPageLogo" src="img/logowhite.png" alt="">
+  <div id="frontPage">
+    <div class="frontPage__logoWrapper">
+      <img class="frontPage__logo" src="img/logowhite.png" alt="">
     </div>
     <video autoplay loop id="desktopHero">
-  <source src="desktophero.mp4" type="video/mp4">
+  <source src="img/desktophero.mp4" type="video/mp4">
 </video>
   </div>
 
@@ -205,17 +205,22 @@
   </div>
 
   <footer>
-    <div class="footerContent">
+    <div class="footer__content">
       <h2>KONTAKT</h2>
-      <div></div>
+      <div class="footer__contact">
+        <a href=""><img src="img/at.png" alt=""></a>
+        <a href=""><img src="img/instagram.png" alt=""></a>
+        <a href=""><img src="img/facebook.png" alt=""></a>
+
+      </div>
     </div>
-    <div class="footerContent">
+    <div class="footer__content">
       <h2>PRESSEKONTAKT</h2>
       <p>Anne Gitte Elbronn</p>
       <p>anne.gitte.elbronn@scandistandard.com</p>
       <p>+45 41 37 72 95</p>
     </div>
-    <div class="footerContent">
+    <div class="footer__content">
       <h2>ADRESSE</h2>
       <p>Scandi Standard AB</p>
       <p>Franzéngatan 5</p>

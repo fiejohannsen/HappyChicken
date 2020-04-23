@@ -47,7 +47,7 @@ header {
   position: fixed;
 }
 
-.frontPage {
+#frontPage {
   background-image: url(../img/mobileBg.png);
   background-size: cover;
   width: 100%;
@@ -58,7 +58,7 @@ header {
   display: none;
 }
 
-.navIconContainer {
+.burgermenu {
   display: inline-block;
   cursor: pointer;
   position: fixed;
@@ -66,7 +66,7 @@ header {
   z-index: 2;
 }
 
-.bar1, .bar2, .bar3 {
+.burgermenu__bar1, .burgermenu__bar2, .burgermenu__bar3 {
   width: 35px;
   height: 5px;
   background-color: white;
@@ -75,16 +75,16 @@ header {
   border-radius: 25px;
 }
 
-.change .bar1 {
+.change .burgermenu__bar1 {
   -webkit-transform: rotate(-45deg) translate(-9px, 6px);
   transform: rotate(-45deg) translate(-9px, 6px);
 }
 
-.change .bar2 {
+.change .burgermenu__bar2 {
   opacity: 0;
 }
 
-.change .bar3 {
+.change .burgermenu__bar3 {
   -webkit-transform: rotate(45deg) translate(-8px, -8px);
   transform: rotate(45deg) translate(-8px, -8px);
 }
@@ -98,7 +98,7 @@ header {
   z-index: 1;
 }
 
-#navBullets {
+#nav {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -107,7 +107,7 @@ header {
   z-index: 1;
 }
 
-#navBullets>a {
+#nav>.nav__link {
   color: white;
   text-decoration: none;
   width: 100%;
@@ -117,19 +117,19 @@ header {
   font-size: 20px;
 }
 
-.navLogo {
+.nav__logo {
   width: 20%;
   margin-bottom: 30%;
 }
 
-.frontPageLogoWrapper {
+.frontPage__logoWrapper {
   width: 100%;
   height: 100%;
   display: flex;
   justify-content: center;
 }
 
-.frontPageLogo {
+.frontPage__logo {
   margin-top: 50%;
   width: auto;
   height: 20%;
@@ -275,8 +275,11 @@ footer {
   color: var(--light-beige);
 }
 
-.footerContent {
+.footer__content {
   margin: 5%;
+}
+.footer__contact>a>img {
+  width: 20%;
 }
 
 @media screen and (min-width: 600px) {
@@ -313,31 +316,31 @@ h2 {
 
   }
 
-  .navIconContainer {
+  .burgermenu {
   top: 2%;
     right: 2%;
   }
 
-  #navBullets {
+  #nav {
 margin-right: 2%;
   }
 
-  #navBullets>a {
+  #nav>.nav__link {
 
     text-align: right;
     margin: 10px;
 
   }
 
-  .navLogo {
+  .nav__logo {
     display: none;
   }
 
 
-.frontPage {
+#frontPage {
   background-image: none;
 }
-.frontPageLogoWrapper {
+.frontPage__logoWrapper {
   width: 10%;
   height: 10%;
   position: fixed;
@@ -346,7 +349,7 @@ margin-right: 2%;
 left: 2%;
 
 }
-.frontPageLogo {
+.frontPage__logo {
     margin-top: 5%;
     width: auto;
     height: 80%;
