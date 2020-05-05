@@ -100,7 +100,7 @@ function showPartnerSlides(n) {
       var positionFromTop = elements[i].getBoundingClientRect().top;
 
       if (positionFromTop - windowHeight <= 0) {
-        element.classList.add('fade-in-element');
+        element.classList.add('is-visible');
         element.classList.remove('hidden');
       }
     }
