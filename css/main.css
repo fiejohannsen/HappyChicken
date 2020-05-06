@@ -570,7 +570,7 @@ footer {
     width: 10%;
     height: 10%;
     position: fixed;
-    z-index: 3;
+    z-index: 20;
     top: 2%;
     left: 2%;
   }
