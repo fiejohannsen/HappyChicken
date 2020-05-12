@@ -629,12 +629,11 @@ footer {
     width: 20%;
   }
 
-  .chickenWrapper {
-    display: flex;
-    overflow: hidden;
+
+
+  .chickenWrapper > img {
+    width: 25%;
   }
-
-
   .aboutSlides>img {
     width: 600px;
     height: 600px;
@@ -703,8 +702,6 @@ margin: auto;
   }
 
 
-  .chickenWrapper > img {
-    width: 25%;
-  }
+
 
 }
