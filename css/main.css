@@ -631,7 +631,7 @@ footer {
 
 
 
-  .chickenWrapper > img {
+  .chickenWrapper > .is-visible {
     width: 25%;
   }
   .aboutSlides>img {
