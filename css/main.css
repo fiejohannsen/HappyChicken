@@ -703,6 +703,8 @@ margin: auto;
   }
 
 
-
+  .chickenWrapper > img {
+    width: 25%;
+  }
 
 }
