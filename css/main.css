@@ -386,6 +386,8 @@ header {
 }
 
 .chicken__slide--left.is-visible {
+  width: 30%;
+
   -webkit-animation: slide-left 1.2s ease-in-out 0.2s both;
 	        animation: slide-left 1.2s ease-in-out 0.2s both;
 }
@@ -413,6 +415,8 @@ header {
   }
 }
 .quote1.is-visible {
+  width: 30%;
+
   -webkit-animation: scale-up-center 1s ease-out 1s both;
   animation: scale-up-center 1s ease-out 1s both;
 }
@@ -445,12 +449,15 @@ header {
 }
 
 .quote2.is-visible {
+  width: 30%;
+
   -webkit-animation: scale-up-center 1s ease-out 1s both;
   animation: scale-up-center 1s ease-out 1s both;
 }
 
 
 .chicken__slide--right.is-visible {
+  width: 30%;
   -webkit-animation: slide-right 1.2s ease-in-out 0.2s both;
 	        animation: slide-right 1.2s ease-in-out 0.2s both;
 }
