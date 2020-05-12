@@ -34,9 +34,9 @@ function currentAboutSlide(n) {
 }
 
 function showAboutSlides(n) {
-  var i;
-  var aboutSlides = document.getElementsByClassName("aboutSlides");
-  var aboutDots = document.getElementsByClassName("aboutDot");
+  let i;
+  let aboutSlides = document.getElementsByClassName("aboutSlides");
+  let aboutDots = document.getElementsByClassName("aboutDot");
   if (n > aboutSlides.length) {
     aboutSlideIndex = 1
   }
