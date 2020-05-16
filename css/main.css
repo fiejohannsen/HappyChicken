@@ -704,8 +704,8 @@ margin: auto;
 /* MEDIA QUERIES FOR DESKTOP/LARGER SCREENS */
 @media screen and (min-width: 1500px) {
   .badgeWrapper>img {
-    width: 22%;
-    margin: 2% 1% 0% 1%;
+    width: 30%;
+    margin: 5% 1% 0% 1%;
   }
 
 
