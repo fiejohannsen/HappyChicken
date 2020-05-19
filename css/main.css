@@ -708,7 +708,14 @@ margin: auto;
     margin: 5% 1% 0% 1%;
   }
 
+.frontPage__logoWrapper {
+  left: 0;
 
+}
+.frontPage__logo {
+
+    height: 60%;
+}
 
 
 }
